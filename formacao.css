@@ -1,0 +1,93 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#f4f7fc,#e9eef7);
+    color:#333;
+    min-height:100vh;
+}
+
+/* Cabeçalho */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#1e293b;
+    color:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.header ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.header a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.header a:hover{
+    color:#38bdf8;
+}
+
+/* Conteúdo */
+
+.main{
+    max-width:1000px;
+    margin:50px auto;
+    padding:20px;
+}
+
+/* Cards */
+
+.card{
+    background:white;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.card h2{
+    color:#0f172a;
+    margin-bottom:15px;
+    border-left:5px solid #38bdf8;
+    padding-left:12px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* Responsivo */
+
+@media(max-width:768px){
+
+    .header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .header ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}

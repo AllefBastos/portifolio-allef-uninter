@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f4f7fc, #e9eef7);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e293b;
+    color: white;
+    padding: 20px 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.header a:hover {
+    color: #38bdf8;
+}
+
+/* Conteúdo */
+.main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.main h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.main > section > p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #64748b;
+}
+
+/* Grid de Projetos */
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.card a {
+    display: inline-block;
+    background: #38bdf8;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.card a:hover {
+    background: #0284c7;
+}
+
+@media(max-width:768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
